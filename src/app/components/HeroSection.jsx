@@ -59,7 +59,7 @@ const HeroSection = () => {
               Contate-me
             </button>
             <Link
-              href="/download/Curriculum Denis Scarabelli.pdf"
+              href="/download/Currículo Denis.pdf"
               target="_blank"
               className="px-8 py-3 w-full sm:w-auto rounded-lg bg-yellow-600 hover:bg-indigo-500 text-white font-semibold text-lg shadow-lg transition-transform transform hover:scale-100 duration-300 mt-3 sm:mt-0"
             >
