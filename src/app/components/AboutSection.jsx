@@ -96,7 +96,7 @@ const TAB_DATA = [
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
               Tech4me
             </span>
-            : <em>Especializado em desenvolvimento web do lado do servidor.</em>
+            : <em>Especializado em desenvolvimento web server-side.</em>
           </li>
         </Link>
       </ul>
@@ -117,14 +117,16 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="rounded-lg bg-[#181818] w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] relative overflow-hidden shadow-xl transition-transform transform hover:scale-105 duration-300 border border-[#181818]">
-          <iframe
-            src="https://lottie.host/embed/563f84c2-ff9d-49cd-b275-991e2d7c78d6/QDsnI1jRtW.json"
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            style={{ position: 'absolute', top: 0, left: 0 }}
-          ></iframe>
+        <div className="flex justify-center md:block">
+          <div className="rounded-lg bg-[#181818] w-[300px] h-[200px] lg:w-[400px] lg:h-[400px] relative overflow-hidden shadow-xl transition-transform transform hover:scale-105 duration-300 border border-[#181818]">
+            <iframe
+              src="https://lottie.host/embed/563f84c2-ff9d-49cd-b275-991e2d7c78d6/QDsnI1jRtW.json"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              style={{ position: 'absolute', top: 0, left: 0 }}
+            ></iframe>
+          </div>
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
@@ -136,22 +138,19 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Habilidades{" "}
+              {" "} Habilidades {" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Educação{" "}
+              {" "} Educação {" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certificações{" "}
+              {" "} Certificações {" "}
             </TabButton>
           </div>
           <div className="mt-8">

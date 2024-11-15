@@ -68,7 +68,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="animate-section col-span-4 place-self-center mt-4 lg:mt-0">
-          <div className="bg-[#181818] w-[300px] h-[250px] lg:w-[500px] lg:h-[350px] relative overflow-hidden rounded-lg shadow-xl transition-transform transform hover:scale-100 duration-300">
+          <div className="w-[300px] h-[250px] lg:w-[500px] lg:h-[350px] relative overflow-hidden rounded-lg shadow-xl transition-transform transform hover:scale-100 duration-300">
             <iframe
               src="https://lottie.host/embed/4ce15160-9caf-4e23-879f-c255bcd9c300/zgUrMHDsnb.json"
               width="100%"

@@ -64,7 +64,7 @@ const projectsData = [
     title: "App React Native Aluguel de Carros",
     description: "Aplicativo para aluguel de carros de luxo",
     image: "/images/projects/6.png",
-    tag: ["Todos", "Mobile"],
+    tag: ["Todos", "Web"],
     gitUrl: "https://github.com/DenisCDev/reactnative-car-app",
     previewUrl: "https://github.com/DenisCDev/reactnative-car-app",
   },
@@ -136,11 +136,6 @@ const ProjectsSection = () => {
           onClick={() => handleTagChange("API")}
           name="API"
           isSelected={tag === "API"}
-        />
-        <ProjectTag
-          onClick={() => handleTagChange("Mobile")}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
         />
       </div>
       <ul className={`grid md:grid-cols-3 gap-8 md:gap-12 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
