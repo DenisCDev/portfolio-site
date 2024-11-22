@@ -131,7 +131,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
           <p className="text-base lg:text-lg">
-            Sou um desenvolvedor front-end brasileiro com uma forte paixão por desenvolvimento web e design UX/UI. Atualmente cursando Ciência da Computação, tenho modernizado e digitalizado empresas no Brasil, criando experiências web incríveis que aumentaram sua lucratividade e crescimento. Minha expertise em criar soluções centradas no usuário ajudou empresas a expandirem sua presença digital e alcançarem resultados notáveis. Estou sempre pronto para enfrentar novos desafios.
+            Sou um desenvolvedor web. Atualmente cursando Ciência da Computação, tenho modernizado e digitalizado empresas no Brasil, criando experiências web incríveis que aumentaram sua lucratividade e crescimento. Minha expertise em criar soluções centradas no usuário ajudou empresas a expandirem sua presença digital e alcançarem resultados notáveis. Estou sempre pronto para enfrentar novos desafios.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
