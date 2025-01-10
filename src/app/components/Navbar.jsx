@@ -18,10 +18,6 @@ const navLinks = [
     title: "Contato",
     path: "#contact",
   },
-  {
-    title: "English Version",
-    path: "https://denis-scarabelli-english.vercel.app/",
-  },
 ];
 
 const Navbar = () => {
