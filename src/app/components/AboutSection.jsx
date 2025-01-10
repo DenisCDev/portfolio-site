@@ -34,6 +34,19 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
+                <Link
+          href="https://cursos.alura.com.br/certificate/denisscarabelli/quality-assurance-plano-testes-gestao-bugs"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+          Quality Assurance: plano de testes e gestão de bugs -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              Alura
+            </span>
+            : <em>Base e melhores práticas de QA.</em>
+          </li>
+        </Link>
         <Link
           href="https://www.coursera.org/account/accomplishments/certificate/8GTWGD9JR77J"
           target="_blank"
@@ -44,20 +57,7 @@ const TAB_DATA = [
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#DB4437] via-[#F4B400] to-[#0F9D58]">
               Google
             </span>
-            : <em>Especializado em criar designs amigáveis para o usuário.</em>
-          </li>
-        </Link>
-        <Link
-          href="https://www.cloudskillsboost.google/public_profiles/18698d44-e14f-4338-b6b3-6e015b323d41/badges/1696274"
-          target="_blank"
-          className="text-white hover:text-yellow-500"
-        >
-          <li>
-            Essenciais do Google Cloud -{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4285F4] via-[#F4B400] to-[#0F9D58]">
-              Google
-            </span>
-            : <em>Compreensão dos serviços de nuvem do Google.</em>
+            : <em>Especializado em criar designs e experiência de uso amigáveis para o usuário.</em>
           </li>
         </Link>
         <Link
@@ -74,19 +74,6 @@ const TAB_DATA = [
           </li>
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1P8PAad_ZuuSwVQUzEm1r04tOMSxQjVts/view"
-          target="_blank"
-          className="text-white hover:text-yellow-500"
-        >
-          <li>
-            Discover: Trilha Conectar -{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-purple-400">
-              Rocketseat
-            </span>
-            : <em>Habilidades aprimoradas em desenvolvimento web moderno.</em>
-          </li>
-        </Link>
-        <Link
           href="https://drive.google.com/file/d/1ZChCvEEHDa_bgfFw091uZ7jau2ghUCk7/view"
           target="_blank"
           className="text-white hover:text-yellow-500"
@@ -97,6 +84,32 @@ const TAB_DATA = [
               Tech4me
             </span>
             : <em>Especializado em desenvolvimento web server-side.</em>
+          </li>
+        </Link>
+        <Link
+          href="https://www.cloudskillsboost.google/public_profiles/18698d44-e14f-4338-b6b3-6e015b323d41/badges/1696274"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+            Essenciais do Google Cloud -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4285F4] via-[#F4B400] to-[#0F9D58]">
+              Google
+            </span>
+            : <em>Compreensão dos serviços de nuvem do Google.</em>
+          </li>
+        </Link>
+        <Link
+          href="https://drive.google.com/file/d/1P8PAad_ZuuSwVQUzEm1r04tOMSxQjVts/view"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+            Discover: Trilha Conectar -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-purple-400">
+              Rocketseat
+            </span>
+            : <em>Habilidades aprimoradas em desenvolvimento web moderno.</em>
           </li>
         </Link>
       </ul>
