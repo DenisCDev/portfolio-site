@@ -9,11 +9,12 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>Testes Automatizados</li>
+        <li>Testes Funcionais</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
         <li>Java</li>
-        <li>Node.js</li>
         <li>React</li>
         <li>Next.js</li>
       </ul>
@@ -34,13 +35,13 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-                <Link
+        <Link
           href="https://cursos.alura.com.br/certificate/denisscarabelli/quality-assurance-plano-testes-gestao-bugs"
           target="_blank"
           className="text-white hover:text-yellow-500"
         >
           <li>
-          Quality Assurance: plano de testes e gestão de bugs -{" "}
+            Quality Assurance: plano de testes e gestão de bugs -{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
               Alura
             </span>
