@@ -49,6 +49,19 @@ const TAB_DATA = [
           </li>
         </Link>
         <Link
+          href="https://cursos.alura.com.br/certificate/denisscarabelli/scrum-agilidade-seu-projeto"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+          Scrum: agilidade em seu projeto -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              Alura
+            </span>
+            : <em>Metódologias agéis em desenvolvimento.</em>
+          </li>
+        </Link>
+        <Link
           href="https://www.coursera.org/account/accomplishments/certificate/8GTWGD9JR77J"
           target="_blank"
           className="text-white hover:text-yellow-500"
