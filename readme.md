@@ -49,5 +49,5 @@ Certifique-se de ter instalado em sua máquina:
 ### Clonando o projeto
 
 ```bash
-git clone https://github.com/seu-usuario/portfolio-site.git
+git clone https://github.com/DenisCDev/portfolio-site.git
 cd portfolio-site
