@@ -1,30 +1,53 @@
-# Site Portfólio Next
+# Meu Portfólio Pessoal
 
-Este é o meu site portfolio desenvolvido utilizando Next.js e Tailwind CSS. Aqui, compartilho minha jornada, projetos e habilidades como desenvolvedor.
+Este repositório contém o código-fonte do meu **site de portfólio pessoal**, onde apresento minhas habilidades, experiências, projetos e formas de contato. O objetivo é demonstrar minha capacidade como desenvolvedora e designer web, além de oferecer uma maneira prática de potenciais empregadores e clientes conhecerem meu trabalho.
 
-## Tecnologias Utilizadas
+![React](https://img.shields.io/badge/React-blue?style=flat-square)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square)
 
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
+---
 
-## Instalação
+## 🧠 Tecnologias Utilizadas
 
-1. Clone o repositório:
+- [Next.js](https://nextjs.org/) – Framework React para aplicações modernas e performáticas
+- [React](https://react.dev/) – Biblioteca para criação de interfaces dinâmicas
+- [Tailwind CSS](https://tailwindcss.com/) – Utilitário de estilização rápida e responsiva
+- [Resend](https://resend.com/) – Integração de envio de e-mails para o formulário de contato
+- [ESLint](https://eslint.org/) – Linter para manter a consistência do código
+- [PostCSS + Autoprefixer](https://postcss.org/) – Processamento de CSS moderno
 
-    ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
-    ```
+---
 
-2. Instale as dependências:
+## 🚀 Visite meu portfólio
 
-    ```bash
-    cd nome-do-repositorio
-    npm install
-    ```
+Acesse a versão online do meu portfólio aqui:  
+👉 [denis-scarabelli.vercel](https://denis-scarabelli.vercel)
 
-3. Inicie o servidor de desenvolvimento:
+---
 
-    ```bash
-    npm run dev
-    ```
+## ✨ Funcionalidades
+
+- Página inicial com introdução pessoal
+- Seção “Sobre mim” com trajetória, habilidades e tecnologias dominadas
+- Galeria de projetos com links para demonstrações e repositórios
+- Formulário de contato funcional (com envio de email via Resend)
+- Design responsivo e adaptado para dispositivos móveis
+- Otimização para SEO e boa performance
+
+---
+
+## 📦 Instalação e uso local
+
+### Pré-requisitos
+
+Certifique-se de ter instalado em sua máquina:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+### Clonando o projeto
+
+```bash
+git clone https://github.com/seu-usuario/portfolio-site.git
+cd portfolio-site
