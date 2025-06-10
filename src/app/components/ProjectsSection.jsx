@@ -13,6 +13,7 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://intlab.vercel.app/",
     previewUrl: "https://intlab.vercel.app/",
+    technologies: ["Next.js", "React", "TailwindCSS"],
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://thegym-brasil.netlify.app/",
     previewUrl: "https://thegym-brasil.netlify.app/",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://verve-cafe.netlify.app/",
     previewUrl: "https://verve-cafe.netlify.app/",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://aikissoba.vercel.app/",
     previewUrl: "https://aikissoba.vercel.app/",
+    technologies: ["Next.js", "React", "TailwindCSS"],
   },
   {
     id: 5,
@@ -49,15 +53,17 @@ const projectsData = [
     tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/nodejsexpress-api",
     previewUrl: "https://github.com/DenisCDev/nodejsexpress-api",
+    technologies: ["Node.js", "Express", "JavaScript"],
   },
   {
     id: 6,
     title: "API PC Java Spring Booot",
-    description: "API Restful de registro de computadores com especificação de peças",
+    description: "API Restful de registro de computadores",
     image: "/images/projects/5.png",
     tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
     previewUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
+    technologies: ["Java", "Spring Boot"],
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://github.com/DenisCDev/reactnative-car-app",
     previewUrl: "https://github.com/DenisCDev/reactnative-car-app",
+    technologies: ["React Native", "Expo"],
   },
 ];
 
@@ -77,7 +84,7 @@ const ProjectsSection = () => {
 
   useEffect(() => {
     const section = sectionRef.current;
-
+    if (!section) return;
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -87,16 +94,12 @@ const ProjectsSection = () => {
       },
       { threshold: 0.3 }
     );
-
-    if (section) {
-      observer.observe(section);
-    }
-
+    observer.observe(section);
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    if (isInView) {
+    if (isInView && sectionRef.current) {
       anime({
         targets: sectionRef.current.querySelectorAll("li"),
         translateY: [70, 0],
@@ -117,11 +120,11 @@ const ProjectsSection = () => {
   );
 
   return (
-    <section id="projects" ref={sectionRef}>
+    <section id="projects" ref={sectionRef} className="py-8 px-4">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-2 md:mb-4">
         Meus Projetos
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 flex-wrap">
         <ProjectTag
           onClick={() => handleTagChange("Todos")}
           name="Todos"
@@ -138,7 +141,11 @@ const ProjectsSection = () => {
           isSelected={tag === "API"}
         />
       </div>
-      <ul className={`grid md:grid-cols-3 gap-8 md:gap-12 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
+      <ul
+        className={`grid gap-8 md:grid-cols-3 md:gap-12 transition-opacity duration-500 ${
+          isInView ? "opacity-100" : "opacity-0"
+        }`}
+      >
         {filteredProjects.map((project) => (
           <li key={project.id}>
             <ProjectCard
@@ -147,6 +154,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              technologies={project.technologies}
             />
           </li>
         ))}
