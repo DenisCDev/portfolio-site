@@ -18,7 +18,6 @@ import {
   SiHtml5,
 } from "react-icons/si";
 
-// Mapeie chaves lowercase → componente de ícone
 const ICON_MAP = {
   "react": SiReact,
   "next.js": SiNextdotjs,
@@ -35,7 +34,6 @@ const ICON_MAP = {
   "css": SiCss3,
   "netlify": SiNetlify,
   "html": SiHtml5,
-  // adicione outras tecnologias em lowercase aqui
 };
 
 const ProjectCard = ({
@@ -43,7 +41,7 @@ const ProjectCard = ({
   title,
   description,
   previewUrl,
-  technologies = [], // array de strings, ex: ["React Native", "java", "HTML"]
+  technologies = [], 
 }) => {
   const handleOpen = () => {
     if (previewUrl) {
@@ -82,9 +80,7 @@ const ProjectCard = ({
               {technologies.map((tech) => {
                 const key = tech.trim().toLowerCase();
                 const IconComponent = ICON_MAP[key];
-                if (!IconComponent) {
-                  // opcional: log para saber quais não estão mapeados
-                  // console.warn(`Ícone não mapeado para tecnologia: ${tech}`);
+                if (!IconComponent) {;
                   return null;
                 }
                 return (
