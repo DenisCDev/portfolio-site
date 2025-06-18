@@ -100,6 +100,9 @@ const ProjectsSection = () => {
 
   useEffect(() => {
     if (isInView && sectionRef.current) {
+      const isMobile = window.innerWidth <= 768; // detecta mobile
+      if (isMobile) return; // desativa a animação em dispositivos móveis
+
       anime({
         targets: sectionRef.current.querySelectorAll("li"),
         translateY: [70, 0],
