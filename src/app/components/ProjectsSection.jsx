@@ -1,8 +1,7 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-import anime from "animejs";
 
 const projectsData = [
   {
@@ -79,40 +78,6 @@ const projectsData = [
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("Todos");
-  const sectionRef = useRef(null);
-  const [isInView, setIsInView] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsInView(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (isInView && sectionRef.current) {
-      const isMobile = window.innerWidth <= 768; // detecta mobile
-      if (isMobile) return; // desativa a animação em dispositivos móveis
-
-      anime({
-        targets: sectionRef.current.querySelectorAll("li"),
-        translateY: [70, 0],
-        opacity: [0, 1],
-        delay: anime.stagger(300),
-        duration: 600,
-        easing: "easeOutQuad",
-      });
-    }
-  }, [isInView]);
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -123,7 +88,7 @@ const ProjectsSection = () => {
   );
 
   return (
-    <section id="projects" ref={sectionRef} className="py-8 px-4">
+    <section id="projects" className="py-8 px-4">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-2 md:mb-4">
         Meus Projetos
       </h2>
@@ -144,11 +109,7 @@ const ProjectsSection = () => {
           isSelected={tag === "API"}
         />
       </div>
-      <ul
-        className={`grid gap-8 md:grid-cols-3 md:gap-12 transition-opacity duration-500 ${
-          isInView ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <ul className="grid gap-8 md:grid-cols-3 md:gap-12">
         {filteredProjects.map((project) => (
           <li key={project.id}>
             <ProjectCard
