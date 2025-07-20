@@ -36,6 +36,32 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <Link
+          href="https://cursos.alura.com.br/user/denisscarabelli/degree-react-javascript-700230/certificate"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+            Explore React com JavaScript -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              Alura
+            </span>
+            : <em>Formação completa em React, abordando desde os fundamentos da biblioteca até integração com APIs, roteamento, hooks e boas práticas modernas.</em>
+          </li>
+        </Link>
+        <Link
+          href="https://cursos.alura.com.br/certificate/denisscarabelli/react-otimizando-performance"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+            React: otimizando a performance -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              Alura
+            </span>
+            : <em>Foco em melhoria de desempenho em aplicações react.</em>
+          </li>
+        </Link>
+        <Link
           href="https://cursos.alura.com.br/certificate/denisscarabelli/quality-assurance-plano-testes-gestao-bugs"
           target="_blank"
           className="text-white hover:text-yellow-500"
