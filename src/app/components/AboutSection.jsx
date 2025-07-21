@@ -36,6 +36,19 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <Link
+          href="https://cursos.alura.com.br/certificate/denisscarabelli/next-js-iniciando-frameworks"
+          target="_blank"
+          className="text-white hover:text-yellow-500"
+        >
+          <li>
+            Next.js: explorando o framework -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              Alura
+            </span>
+            : <em>Introdução ao Next.js com foco em renderização, roteamento e estrutura de projetos com React.</em>
+          </li>
+        </Link>
+        <Link
           href="https://cursos.alura.com.br/user/denisscarabelli/degree-react-javascript-700230/certificate"
           target="_blank"
           className="text-white hover:text-yellow-500"
@@ -80,7 +93,7 @@ const TAB_DATA = [
           className="text-white hover:text-yellow-500"
         >
           <li>
-          Scrum: agilidade em seu projeto -{" "}
+            Scrum: agilidade em seu projeto -{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
               Alura
             </span>
