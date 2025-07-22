@@ -62,7 +62,7 @@ const projectsData = [
     tag: ["Todos", "API"],
     gitUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
     previewUrl: "https://github.com/DenisCDev/API-RegistroDeComputadores",
-    technologies: ["Java", "Spring Boot"],
+    technologies: ["Spring Boot"],
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const projectsData = [
     tag: ["Todos", "Web"],
     gitUrl: "https://github.com/DenisCDev/reactnative-car-app",
     previewUrl: "https://github.com/DenisCDev/reactnative-car-app",
-    technologies: ["React Native", "Expo"],
+    technologies: ["Expo"],
   },
 ];
 

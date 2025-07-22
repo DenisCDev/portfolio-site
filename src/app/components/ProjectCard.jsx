@@ -9,9 +9,7 @@ import {
   SiNodedotjs,
   SiExpress,
   SiJavascript,
-  SiJava,
   SiSpringboot,
-  SiReactnative,
   SiExpo,
   SiCss3,
   SiNetlify,
@@ -27,9 +25,7 @@ const ICON_MAP = {
   "nodejs": SiNodedotjs,
   "express": SiExpress,
   "javascript": SiJavascript,
-  "java": SiJava,
   "spring boot": SiSpringboot,
-  "react native": SiReactnative,
   "expo": SiExpo,
   "css": SiCss3,
   "netlify": SiNetlify,
@@ -73,7 +69,6 @@ const ProjectCard = ({
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
 
-        {/* Bloco de ícones de tecnologias */}
         {technologies.length > 0 && (
           <div className="mt-4">
             <div className="flex flex-wrap gap-2">
