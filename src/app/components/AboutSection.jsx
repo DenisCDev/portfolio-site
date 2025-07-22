@@ -75,19 +75,6 @@ const TAB_DATA = [
           </li>
         </Link>
         <Link
-          href="https://cursos.alura.com.br/certificate/denisscarabelli/quality-assurance-plano-testes-gestao-bugs"
-          target="_blank"
-          className="text-white hover:text-yellow-500"
-        >
-          <li>
-            Quality Assurance: plano de testes e gestão de bugs -{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
-              Alura
-            </span>
-            : <em>Base e melhores práticas de QA.</em>
-          </li>
-        </Link>
-        <Link
           href="https://cursos.alura.com.br/certificate/denisscarabelli/scrum-agilidade-seu-projeto"
           target="_blank"
           className="text-white hover:text-yellow-500"
